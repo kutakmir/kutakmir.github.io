@@ -1,0 +1,208 @@
+<!doctype html><html lang=en dir=auto><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>Projects | My Portfolio</title>
+<meta name=keywords content="Portfolio,Projects,Swift,iOS,SDK"><meta name=description content="Portfolio of iOS development and software engineering projects by Miroslav Kutak"><meta name=author content="Miroslav Kutak"><link rel=canonical href=https://kutakmir.github.io/projects/><link crossorigin=anonymous href=/assets/css/stylesheet.45e028aa8ce0961349adf411b013ee39406be2c0bc80d4ea3fc04555f7f4611a.css integrity="sha256-ReAoqozglhNJrfQRsBPuOUBr4sC8gNTqP8BFVff0YRo=" rel="preload stylesheet" as=style><link rel=icon href=https://kutakmir.github.io/apple-touch-icon.png><link rel=apple-touch-icon href=https://kutakmir.github.io/apple-touch-icon.png><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><link rel=alternate hreflang=en href=https://kutakmir.github.io/projects/><noscript><style>#theme-toggle,.top-link{display:none}</style><style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--code-block-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style></noscript>
+<style>
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 24px;
+    margin-top: 30px;
+  }
+  .project-card {
+    background: var(--entry);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 24px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    position: relative;
+    overflow: hidden;
+  }
+  .project-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--tertiary);
+    box-shadow: 0 12px 20px -8px rgba(0, 0, 0, 0.15);
+  }
+  .project-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(180deg, #38bdf8, #818cf8);
+    opacity: 0.8;
+  }
+  .project-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--primary);
+  }
+  .project-subtitle {
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: #6366f1;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .project-description {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--content);
+    margin-bottom: 20px;
+    flex-grow: 1;
+  }
+  .project-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 15px;
+  }
+  .badge {
+    font-size: 0.75rem;
+    padding: 4px 8px;
+    border-radius: 6px;
+    background: var(--tertiary);
+    color: var(--primary);
+    font-weight: 600;
+    border: 1px solid var(--border);
+  }
+  .project-link {
+    display: inline-flex;
+    align-items: center;
+    color: #4f46e5;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .project-link:hover {
+    color: #818cf8;
+  }
+  .project-link svg {
+    margin-left: 5px;
+    width: 16px;
+    height: 16px;
+  }
+  @media(prefers-color-scheme: dark) {
+    .project-card:hover {
+      box-shadow: 0 12px 20px -8px rgba(0, 0, 0, 0.4);
+    }
+  }
+</style>
+<meta property="og:url" content="https://kutakmir.github.io/projects/"><meta property="og:site_name" content="My New Hugo Site"><meta property="og:title" content="Projects"><meta property="og:description" content="Portfolio of iOS development and software engineering projects by Miroslav Kutak"><meta property="og:locale" content="en-us"><meta property="og:type" content="website"></head><body class=list id=top><script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add("dark"):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove("dark"):window.matchMedia("(prefers-color-scheme: dark)").matches&&document.body.classList.add("dark")</script><header class=header><nav class=nav><div class=logo><a href=https://kutakmir.github.io/ accesskey=h title="Home (Alt + H)"><img src=https://kutakmir.github.io/apple-touch-icon.png alt aria-label=logo height=35>Home</a><div class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></div></div><ul id=menu><li><a href=https://kutakmir.github.io/projects/ title=projects><span class=active>projects</span></a></li><li><a href=https://kutakmir.github.io/categories/ title=categories><span>categories</span></a></li><li><a href=https://kutakmir.github.io/tags/ title=tags><span>tags</span></a></li></ul></nav></header><main class=main><header class=page-header><h1>Projects</h1></header>
+<div class="projects-grid">
+
+  <div class="project-card">
+    <div>
+      <div class="project-title">Fext</div>
+      <div class="project-subtitle">Personalized Group Messaging</div>
+      <div class="project-description">A specialized group messaging application designed to streamline communication by sending individual SMS to each contact, eliminating the clutter of traditional group chats. Contributed to modernization, a comprehensive redesign, and successfully integrated Firebase, Twilio SDK, and RevenueCat.</div>
+    </div>
+    <div>
+      <div class="project-badges">
+        <span class="badge">iOS</span>
+        <span class="badge">Swift</span>
+        <span class="badge">UIKit</span>
+        <span class="badge">Firebase</span>
+        <span class="badge">Twilio</span>
+        <span class="badge">RevenueCat</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <div>
+      <div class="project-title">SleepSpace</div>
+      <div class="project-subtitle">Sonic Therapy & Sleep Tracking</div>
+      <div class="project-description">A leading sleep therapy application (formerly SonicSleep) that uses adaptive sounds and AI analysis to improve sleep quality. Responsible for a major codebase refactoring, introducing new features, and architecting the companion watchOS application with complex audio processing.</div>
+    </div>
+    <div>
+      <div class="project-badges">
+        <span class="badge">iOS</span>
+        <span class="badge">watchOS</span>
+        <span class="badge">Swift</span>
+        <span class="badge">Audio Processing</span>
+        <span class="badge">AI Analysis</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <div>
+      <div class="project-title">MakeTimeFlow</div>
+      <div class="project-subtitle">Deep Work Productivity Platform</div>
+      <div class="project-description">A science-backed operating system for high-performers, designed by a Harvard physician to align actions with long-term goals. Owned the development of SwiftUI interfaces and REST integrations, stabilizing the codebase and maintaining a rapid release cycle.</div>
+    </div>
+    <div>
+      <div class="project-badges">
+        <span class="badge">iOS</span>
+        <span class="badge">SwiftUI</span>
+        <span class="badge">REST API</span>
+        <span class="badge">Productivity</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <div>
+      <div class="project-title">Hollywood.com</div>
+      <div class="project-subtitle">Tickets & More</div>
+      <div class="project-description">The official Hollywood.com app for discovering movies and purchasing tickets for theaters and Broadway shows. Took ownership of major application components to improve architecture, implementing secure ticket purchases and refunds via Stripe and WebSockets in a high-traffic environment.</div>
+    </div>
+    <div>
+      <div class="project-badges">
+        <span class="badge">iOS</span>
+        <span class="badge">Stripe</span>
+        <span class="badge">WebSockets</span>
+        <span class="badge">Transactions</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <div>
+      <div class="project-title">TennisLocker</div>
+      <div class="project-subtitle">Player Development Management</div>
+      <div class="project-description">A premier on-court program management and player development app used by top tennis academies to centralize player progress data. Built the mobile applications from the ground up using a modular architecture, leading a team of four developers and establishing Fastlane CI/CD automation.</div>
+    </div>
+    <div>
+      <div class="project-badges">
+        <span class="badge">iOS</span>
+        <span class="badge">Modular Architecture</span>
+        <span class="badge">CI/CD</span>
+        <span class="badge">Fastlane</span>
+        <span class="badge">Team Lead</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <div>
+      <div class="project-title">BigParser Swift SDK</div>
+      <div class="project-subtitle">SDK Implementation</div>
+      <div class="project-description">Designed and implemented a Swift SDK for BigParser, enabling seamless integration with its data processing APIs. Built a clean, developer-friendly interface with strong focus on type safety, error handling, and asynchronous workflows for large datasets.</div>
+    </div>
+    <div>
+      <div class="project-badges">
+        <span class="badge">SDK</span>
+        <span class="badge">Swift</span>
+        <span class="badge">Type Safety</span>
+        <span class="badge">API Integration</span>
+      </div>
+      <a class="project-link" href="https://github.com/intellibus/bigparser-swift" target="_blank" rel="noopener noreferrer">
+        View Repository
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3"/></svg>
+      </a>
+    </div>
+  </div>
+
+</div>
+</main><footer class=footer><span>&copy; 2025 <a href=https://kutakmir.github.io/>My New Hugo Site</a></span> ·
+<span>Powered by
+<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
+<a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg></a><script>let menu=document.getElementById("menu");menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove("dark"),localStorage.setItem("pref-theme","light")):(document.body.classList.add("dark"),localStorage.setItem("pref-theme","dark"))})</script></body></html>
